@@ -1,0 +1,13 @@
+body {
+    text-align: center;
+    background-color: lightcyan;
+}
+
+#container {
+    background-color: aliceblue;
+
+}
+
+input {
+    max-width: 100%;
+}
