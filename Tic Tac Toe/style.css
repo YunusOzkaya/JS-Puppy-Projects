@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    user-select: none;
+}
+
+h1 {
+    color: darkcyan;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 0px;
+    /* Adjust the gap between squares as needed */
+    max-width: 500px;
+    /* Adjust the max width as needed */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    border: 5px solid white;
+
+}
+
+.box {
+    aspect-ratio: 1;
+    border: 5px solid white;
+    background-color: darkcyan;
+    color: white;
+    text-align: center;
+    font-size: 8rem;
+}
+
+button {
+    position: absolute;
+    top: 40%;
+    right: 20%;
+}
+
+/* Medya sorgusu ekleyelim */
+@media (max-width: 768px) {
+    button {
+        position: relative;
+        /* Küçük ekranlarda düğme container'ın içinde olacak */
+        top: auto;
+        right: auto;
+        margin-top: 20px;
+        /* Düğme ile diğer içerik arasında bir boşluk bırakalım */
+    }
+}
