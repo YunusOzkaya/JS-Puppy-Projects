@@ -33,10 +33,29 @@ h1 {
     font-size: 8rem;
 }
 
+
 button {
+    border: 3px solid #ffffff;
     position: absolute;
     top: 40%;
     right: 20%;
+    background-color: darkcyan;
+    /* Düğme rengi */
+    color: white;
+    /* Yazı rengi */
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    /* İmleçi bir el simgesine dönüştür */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    /* Geçiş efekti */
+}
+
+button:hover {
+    background-color: #006666;
+    /* Hover etkisi için arka plan rengini değiştir */
+    color: #fff;
+    /* Hover etkisi için yazı rengini değiştir */
 }
 
 /* Medya sorgusu ekleyelim */

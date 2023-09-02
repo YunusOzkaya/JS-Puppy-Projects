@@ -15,7 +15,7 @@ for (const item of boxEls) {
 
 
 
-
+//Checking if box is empty and using the trigger bool for checking if its "X" turn or "O"
 function handleClick(event) {
     const target = event.target;
     if (!target.textContent && trigger && !gameWon) {
